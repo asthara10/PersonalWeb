@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--for compatibility with explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--responsive page-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--Bootstrap stylesheet-->
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!--My style sheet-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'> <!--font-->
+	<link href='https://fonts.googleapis.com/css?family=Nixie One' rel='stylesheet'> <!--font-->
+</head>
+<body>
+	<div class="container">
+		<ul class="menu" id="myMenu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="game.html">Play with nucleotides</a></li>
+			<li><a href="classwork.html">Class work</a></li>
+			<li><a href="miod.html">MIOD</a></li>
+			<li><a href="https://www.linkedin.com/in/juliamirpedrol/" target="_blank">LinkedIn</a></li>
+			<li><a class="current" class="last" href="contact.html">Contact</a></li>
+			<a href="javascript:void(0);" class="icon" onclick="RespMenu()">&#9776;</a>
+		</ul>
+		<p id="com_text">Fill in the form below and I will recieve any question or comment!</p>
+		<div class="container" class="contact">
+			<form method="post" action="send_mail.php" name="input">
+			<p><label>First Name<input placeholder="Your name" type="text" name="first_name" required></label> </p>
+			<p><label>Email <input placeholder="Your Email" type="email" name="email_address"></label></p>
+			<p><label>Comments<textarea placeholder="Your message" name="comments" maxlength="500"></textarea></label></p>
+			<p><button id="send">Send</button></p>
+			</form>
+		</div>
+	</div>
+	<script>
+		function RespMenu() {
+			var x = document.getElementById("myMenu");
+			if (x.className === "menu") {
+				x.className += " responsive";
+			} else {
+				x.className = "menu";
+			}
+		}	
+	</script>
+</body>
+</html>

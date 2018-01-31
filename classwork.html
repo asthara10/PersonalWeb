@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--for compatibility with explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--responsive page-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--Bootstrap stylesheet-->
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!--My style sheet-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'> <!--font-->
+	<link href='https://fonts.googleapis.com/css?family=Nixie One' rel='stylesheet'> <!--font-->
+</head>
+<body>
+	<div class="container">
+		<ul class="menu" id="myMenu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="game.html">Play with nucleotides</a></li>
+			<li><a class="current" href="classwork.html">Class work</a></li>
+			<li><a href="miod.html">MIOD</a></li>
+			<li><a href="https://www.linkedin.com/in/juliamirpedrol/" target="_blank">LinkedIn</a></li>
+			<li><a class="last" href="contact.html">Contact</a></li>
+			<a href="javascript:void(0);" class="icon" onclick="RespMenu()">&#9776;</a>
+		</ul>
+		<div>
+			<h1 class="title" class="big_title">MIOD database follow up work</h1>
+		</div>
+		<div class="image_above">
+			<iframe src='https://onedrive.live.com/embed?cid=E9491494DEDA5C4C&resid=E9491494DEDA5C4C%216642&authkey=AEjS-rE2xEfhlC4&em=2&wdAr=1.7777777777777777' width='350px' height='221px' frameborder='0'>Esto es un documento de <a target='_blank' href='https://office.com'>Microsoft Office</a> incrustado con tecnología de <a target='_blank' href='https://office.com/webapps'>Office Online</a>.</iframe>
+			<p class="text_below">MIOD database initial specifications</p>
+		</div>
+		<div>
+			<h1 class="title" class="big_title">Course exercises</h1>
+		</div>
+	</div>
+	<script>
+		function RespMenu() {
+			var x = document.getElementById("myMenu");
+			if (x.className === "menu") {
+				x.className += " responsive";
+			} else {
+				x.className = "menu";
+			}
+		}	
+	</script>
+</body>
+</html>

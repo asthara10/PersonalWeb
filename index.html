@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--for compatibility with explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--responsive page-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--Bootstrap stylesheet-->
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!--My style sheet-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'> <!--font-->
+	<link href='https://fonts.googleapis.com/css?family=Nixie One' rel='stylesheet'> <!--font-->
+	<style>
+	    body {
+			background-image: url("me_image_3.png");
+			background-repeat: no-repeat;
+			background-position: 95% 50%;
+			background-attachment: fixed;
+			background-size: 30%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul class="menu" id="myMenu">
+			<li><a class="current" href="index.html">Home</a></li>
+			<li><a href="game.html">Play with nucleotides</a></li>
+			<li><a href="classwork.html">Class work</a></li>
+			<li><a href="miod.html">MIOD</a></li>
+			<li><a href="https://www.linkedin.com/in/juliamirpedrol/" target="_blank">LinkedIn</a></li>
+			<li><a class="last" href="contact.html">Contact</a></li>
+			<a href="javascript:void(0);" class="icon" onclick="RespMenu()">&#9776;</a>
+		</ul>
+		<p class="quote"><q>A journey of a thousand miles must begin with a single step</q></p>
+		<div class="explanation">
+			<div id="first">
+				<p class="title">About Me</p>
+				<p>Hi! I'm Júlia from Palamós (Baix Empordà), currently living in Barcelona.</p>
+				<p>I started studying biology due to my curiosity for things that can't be seen with the human eye, and ended up on Bioinformatics.</p>
+				<p>Feel free to navigate through my page and don't forget to play my minigame!</p>
+			</div>
+			<div id="second">
+				<p class="title">Formation</p>
+				<p>Bachelor's degree in Biology (Fundamental Sciences)</p>
+				<p>Master's degree in Genetics and Genomics (Human)</p>
+				<p>Master's degree in Bioinformatics for Health Sciences</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		function RespMenu() {
+			var x = document.getElementById("myMenu");
+			if (x.className === "menu") {
+				x.className += " responsive";
+			} else {
+				x.className = "menu";
+			}
+		}	
+	</script>
+</body>
+</html>
