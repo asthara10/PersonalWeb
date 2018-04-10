@@ -25,12 +25,46 @@
 		<div>
 			<h1 class="title" class="big_title">MIOD database follow up work</h1>
 		</div>
-		<div class="image_above">
-			<iframe src='https://onedrive.live.com/embed?cid=E9491494DEDA5C4C&resid=E9491494DEDA5C4C%216642&authkey=AEjS-rE2xEfhlC4&em=2&wdAr=1.7777777777777777' width='350px' height='221px' frameborder='0'>Esto es un documento de <a target='_blank' href='https://office.com'>Microsoft Office</a> incrustado con tecnología de <a target='_blank' href='https://office.com/webapps'>Office Online</a>.</iframe>
-			<p class="text_below">MIOD database initial specifications</p>
+		<div class="container">
+			<div class="image_above">
+				<iframe src='https://onedrive.live.com/embed?cid=E9491494DEDA5C4C&resid=E9491494DEDA5C4C%216642&authkey=AEjS-rE2xEfhlC4&em=2&wdAr=1.7777777777777777' width='350px' height='221px' frameborder='0'>Esto es un documento de <a target='_blank' href='https://office.com'>Microsoft Office</a> incrustado con tecnología de <a target='_blank' href='https://office.com/webapps'>Office Online</a>.</iframe>
+				<p class="text_below">MIOD database initial specifications</p>
+			</div>
+			<div class="image_above">
+				<iframe src='https://onedrive.live.com/embed?cid=E9491494DEDA5C4C&resid=E9491494DEDA5C4C%216645&authkey=AIroXZinq06XGgo&em=2&wdAr=1.7777777777777777' width='350px' height='221px' frameborder='0'>Esto es un documento de <a target='_blank' href='https://office.com'>Microsoft Office</a> incrustado con tecnología de <a target='_blank' href='https://office.com/webapps'>Office Online</a>.</iframe>
+				<p class="text_below">MIOD data modeling presentation</p>
+			</div>
+			<div class="image_above">
+				<a href="MIODmodel.png">
+					<img src="MIODmodel.png" width="300px" height="250px">
+				</a>
+				<p class="text_below">Final data model used in the MIOD database (click to see the original size)</p>
+			</div>
 		</div>
 		<div>
 			<h1 class="title" class="big_title">Course exercises</h1>
+		</div>
+		<div class="container">
+			<div class="image_above">
+				<a href="GWAS_diagram2.png">
+					<img src="GWAS_diagram2.png" width="300px" height="250px">
+				</a>
+				<p class="text_below">GWAS data modeling exercise (click to see the original size)</p>
+				<p class="text_below">The data is organized the following: users have many phenotypes and many samples, each sample from each user can participate in many GWAS studys and have also some SNPs (which are results for each study). 
+				I have considered the table of samples as type of sample and thus the study is related with User_has_Sample, this table has also a Date indicating the data of extraction.
+				I consider that the phenotypes are related to a user independently of the taken sample and the SNPs.
+				SNPs have their statistics and form part of a gene. These genes are studied in an SNParray, which is associated to the Study.
+				I consider SNPs related to each user+sample and also with the study, as the results will depend on the type of study and can be seen in groups (for example, disease or wildtype) and also each user has it's own SNP if results need to be seen individually.
+				Finally, both SNParrays and Studys may have papers of reference. 
+
+				I have used the names that won't be repeted in any element as id for that table instead of generating a default id (for example, in the case of genes.
+				</p>
+			</div>
+			<div class="container">
+				<button class="button"><a href="blast.php">BLAST application</a></button>
+			</div>
+			<p>Click the button to use the BLAST application.</p>
+			<p>Direct to the MIOD section in the menu to visit the MIOD database.</p>
 		</div>
 	</div>
 	<script>
